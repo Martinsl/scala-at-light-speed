@@ -68,7 +68,7 @@ object FunctionalProgramming extends App {
     val aFilteredList2 = List(1,2,3,4,5).filter(_ <= 3) // equivalent to x => x <= 3
 
     // all pairs between the numbers 1,2,3 and letters 'a', 'b', 'c'
-    var allPairs = List(1,2,3).flatMap(num => List('a', 'b', 'c').map(letter => s"$number-$letter"))
+    var allPairs = List(1,2,3).flatMap(num => List('a', 'b', 'c').map(letter => s"$num-$letter"))
 
     //  for comprehensions - equivalent to the map/flatMap chain above, these two are IDENTICAL to the COMPILER
     val alternativePairs = for {
